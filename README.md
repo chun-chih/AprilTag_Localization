@@ -2,9 +2,9 @@
 
 ## Installation
 ```console
-$ mkdir -p ~/yourwsname
+$ mkdir -p ~/catkin_ws
 $ git clone https://github.com/Andreew9504089/AprilTag_Localization.git
-$ cd ~/yourwsname
+$ cd ~/catkin_ws
 $ catkin_make
 ```
 
