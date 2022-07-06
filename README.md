@@ -10,7 +10,7 @@ $ catkin_make
 
 ## Run
 ```console
-$ cd /home/chan/Apriltag_Localization
+$ cd /home/chan/AprilTag_Localization
 $ source devel/setup.bash
 $ export GAZEBO_MODEL_PATH= /home/chan/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/models:$GAZEBO_MODEL_PATH
 $ roslaunch rotors_gazebo iris_one.launch
