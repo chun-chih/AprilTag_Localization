@@ -4,7 +4,7 @@
 ```console
 $ mkdir -p ~/catkin_ws
 $ git clone https://github.com/Andreew9504089/AprilTag_Localization.git
-$ cd ~/catkin_ws
+$ cd /home/chan/AprilTag_Localization
 $ catkin_make
 ```
 
