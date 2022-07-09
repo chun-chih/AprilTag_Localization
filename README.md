@@ -2,16 +2,16 @@
 
 ## Installation
 ```console
-$ mkdir -p ~/catkin_ws
+$ mkdir -p ~/NCRL
 $ git clone https://github.com/Andreew9504089/AprilTag_Localization.git
-$ cd /home/chan/AprilTag_Localization
+$ cd /home/chan/NCRL/AprilTag_Localization
 $ catkin_make
 ```
 
 ## Run
 ```console
-$ cd /home/chan/AprilTag_Localization && source devel/setup.bash
-$ export GAZEBO_MODEL_PATH=/home/chan/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/models:$GAZEBO_MODEL_PATH
+$ cd /home/chan/NCRL/AprilTag_Localization && source devel/setup.bash
+$ export GAZEBO_MODEL_PATH=/home/chan/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/models:$GAZEBO_MODEL_PATH
 
 $ roslaunch rotors_gazebo iris_one.launch
 ```
