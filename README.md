@@ -15,6 +15,22 @@ $ export GAZEBO_MODEL_PATH=/home/chan/NCRL/AprilTag_Localization/src/Env/multiro
 
 $ roslaunch rotors_gazebo iris_one.launch
 ```
+## take off
+```console
+$ roslaunch rotors_gazebo controller_geometry_iris.launch
+```
+## Start Apriltag Detection
+```console
+$ roslaunch apriltag_ros continuous_detection.launch
+```
+## control flight
+```console
+$ rosrun rotors_gazebo waypoint_publisher x y z yall
+```
+## error
+```console
+$ rqt_plot
+```
 ## Group Members
 
 ## To-Do
