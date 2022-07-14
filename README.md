@@ -5,7 +5,7 @@
 $ mkdir -p ~/NCRL
 $ git clone https://github.com/Andreew9504089/AprilTag_Localization.git
 $ cd /home/chan/NCRL/AprilTag_Localization
-$ catkin build
+$ catkin_make
 ```
 
 ## Run
