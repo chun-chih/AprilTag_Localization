@@ -23,6 +23,10 @@ $ roslaunch rotors_gazebo controller_geometry_iris.launch
 ```console
 $ roslaunch apriltag_ros continuous_detection.launch
 ```
+## Start rviz
+```console
+$ rviz -d tagslam_root/src/tagslam/d435x2_config/tagslam_d435.rviz &
+```
 ## control flight
 ```console
 $ rosrun rotors_gazebo waypoint_publisher x y z yall
