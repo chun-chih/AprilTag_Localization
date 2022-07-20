@@ -80,3 +80,5 @@ $ rqt_plot
 4. Find 0.3mSquarePlate template in /models and copy
 5. Change the name in model.config and model.sdf to ApriltagIDx
 6. In model.sdf find <name> tag under <material> tag, then change the name to Apriltag/IDx
+
+## Qground https://c-shengwen-tw.gitbook.io/ncrl-flight-controller/ground-stations/qgroundcontrol
