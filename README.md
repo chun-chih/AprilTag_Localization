@@ -31,6 +31,10 @@ $ rviz -d tagslam_root/src/tagslam/d435x2_config/tagslam_d435.rviz &
 ```console
 $ rosrun rotors_gazebo waypoint_publisher x y z yall
 ```
+##if it can't find subscriber
+```console
+$ export ROS_NAMESPACE=/iris1
+```
 ## error
 ```console
 $ rqt_plot
