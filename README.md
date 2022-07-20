@@ -10,10 +10,14 @@ $ catkin_make
 
 ## Run
 ```console
-$ cd /home/chan/NCRL/AprilTag_Localization && source devel/setup.bash
-$ export GAZEBO_MODEL_PATH=/home/chan/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/models:$GAZEBO_MODEL_PATH
+cd ~/NCRL/AprilTag_Localization && source devel/setup.bash
 
-$ roslaunch rotors_gazebo iris_one.launch
+~/NCRL/AprilTag_Localization$ roslaunch rotors_gazebo iris_one.launch
+~/NCRL/AprilTag_Localization$ roslaunch rotors_gazebo controller_geometry_iris.launch 
+~/NCRL/AprilTag_Localization$ rosrun imu_filter_madgwick imu_filter_node _use_mag:=false _publish_tf:=false _world_frame:="enu" /imu/data_raw:=/iris1/imu 
+~/NCRL/AprilTag_Localization$ roslaunch rotors_gazebo sensor_fusion.launch 
+~/NCRL/tagslam_root$ roslaunch tagslam tagslam_d435.launch 
+~/NCRL/tagslam_root$ roslaunch tagslam apriltag_d435.launch
 ```
 ## take off
 ```console
@@ -31,7 +35,7 @@ $ rviz -d tagslam_root/src/tagslam/d435x2_config/tagslam_d435.rviz &
 ```console
 $ rosrun rotors_gazebo waypoint_publisher x y z yall
 ```
-##if it can't find subscriber
+## if it can't find subscriber
 ```console
 $ export ROS_NAMESPACE=/iris1
 ```
