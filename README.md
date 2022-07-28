@@ -3,8 +3,9 @@
 ## Installation
 ```console
 $ mkdir -p ~/NCRL
+$ cd ~/NCRL
 $ git clone https://github.com/Andreew9504089/AprilTag_Localization.git
-$ cd /home/chan/NCRL/AprilTag_Localization
+$ cd ~/NCRL/AprilTag_Localization
 $ catkin_make
 ```
 
