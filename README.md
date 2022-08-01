@@ -81,3 +81,10 @@ $ rqt_plot
 4. Find 0.3mSquarePlate template in /models and copy
 5. Change the name in model.config and model.sdf to ApriltagIDx
 6. In model.sdf find <name> tag under <material> tag, then change the name to Apriltag/IDx
+
+### Run d435
+```console
+roslaunch tagslam tagslam.launch run_online:=true
+rosparam set use_sim_time true
+roslaunch tagslam apriltag_detector_node.launch
+```
