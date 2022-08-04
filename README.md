@@ -88,4 +88,5 @@ roslaunch tagslam tagslam.launch run_online:=true
 rosparam set use_sim_time true
 roslaunch tagslam apriltag_detector_node.launch
 roslaunch realsense2_camera rs_camera.launch
+rosservice call /tagslam/dump
 ```
