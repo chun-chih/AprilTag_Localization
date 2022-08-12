@@ -20,30 +20,6 @@ cd ~/NCRL/AprilTag_Localization && source devel/setup.bash
 ~/NCRL/tagslam_root$ roslaunch tagslam tagslam_d435.launch 
 ~/NCRL/tagslam_root$ roslaunch tagslam apriltag_d435.launch
 ```
-## take off
-```console
-$ roslaunch rotors_gazebo controller_geometry_iris.launch
-```
-## Start Apriltag Detection
-```console
-$ roslaunch apriltag_ros continuous_detection.launch
-```
-## Start rviz
-```console
-$ rviz -d tagslam_root/src/tagslam/d435x2_config/tagslam_d435.rviz &
-```
-## control flight
-```console
-$ rosrun rotors_gazebo waypoint_publisher x y z yall
-```
-## if it can't find subscriber
-```console
-$ export ROS_NAMESPACE=/iris1
-```
-## error
-```console
-$ rqt_plot
-```
 ## Group Members
 
 ## To-Do
@@ -81,12 +57,3 @@ $ rqt_plot
 4. Find 0.3mSquarePlate template in /models and copy
 5. Change the name in model.config and model.sdf to ApriltagIDx
 6. In model.sdf find <name> tag under <material> tag, then change the name to Apriltag/IDx
-
-### Run d435
-```console
-roslaunch tagslam tagslam.launch run_online:=true
-rosparam set use_sim_time true
-roslaunch tagslam apriltag_detector_node.launch
-roslaunch realsense2_camera rs_camera.launch
-rosservice call /tagslam/dump
-```
